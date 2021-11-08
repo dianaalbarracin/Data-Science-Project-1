@@ -9,7 +9,7 @@ import json
 #in my case C:\Users\Diana Albarracin\Desktop\CO2Emission_LifeExp.csv
 df = pd.read_csv (r'C:\Users\Diana Albarracin\Desktop\CO2Emission_LifeExp.csv') #change to the path where you saved the file
 
-#Check if the data set is empty or has only one row (category names) and show error if this is the case
+#Check if the data set is empty and show error if this is the case
 if (df.empty):
     print("Error: Data set is empty")
     
@@ -96,7 +96,7 @@ with open('CO2Emission_LifeExp.json', 'r') as openfile:
         json_object = json.load(openfile)
     except ValueError:
         print ("Error: unable to convert to Json")
-#source of code to valiidate if the file is a JSON file [5]
+#source of code to validate if the file is a JSON file [5]
 
 
 #Sources:
